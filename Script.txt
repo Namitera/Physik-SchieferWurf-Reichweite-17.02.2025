@@ -1,0 +1,81 @@
+Scenen:
+Thumbnail
+Opening
+PauseAndPonderSolution
+Aber
+VisualEnding
+Ending
+Zusammenfassung
+
+
+
+Opening:
+Nachdem wir uns den schiefen Wurf angesehen haben will ich nochmal auf die Reichweite eingehen. 
+
+Zur Wiederholung: Betrachten wir die Flugbahn eines Objekts, so wird dieses von der Gravitation nach unten gezogen. Zudem hat das Objekt eine 
+Anfangsgeschwindigkeit v0 und einen Winkel θ, welcher die Flugbahn beeinflusst. Durch Beobachtungen über die Flugbahn sind wir zur Bahnkurve 
+gekommen. Die Frage ist nun: wie berechnet man die Reichweite, wenn man die Anfangsgeschwindigkeit und den Winkel kennt? Beim Start und bei 
+der Landung des Objektes befindet es sich an den Nullstellen unseres Graphen. Wenn wir diese berechnen, dann können wir den Abstand 
+bestimmen und somit die Reichweite erhalten.
+
+
+
+PauseAndPonderSolution:
+Das ist die Formel für die Bahnkurve. Sie beschreibt wie sich das Objekt bewegt. Der Ansatz ist y(x)=0 zu setzen. Durch umstellen nach x 
+erhalten wir die Stelle, an der das Objekt landet und somit die Reichweite. 
+
+x² im Zähler lässt sich neben den Bruch schreiben. In dieser Schreibweise sieht man deutlicher, dass jeder Term mindestens ein x enthält. 
+
+Hier das x² und hier das x. Somit lässt sich ein x ausklammern. Der linke Term hat nun ein x weniger von einem x zu keinem, und der rechte 
+Term von x² zu x. Dieses fehlende x ist das vor der Klammer. Durch Ausmultiplizieren könnte das x wieder auf die Terme aufgeteilt werden.
+
+Da wir den Term in diese Form gebracht haben, können wir den Satz vom Nullprodukt anwenden: Ein Produkt ist genau dann 0, wenn mindestens 
+ein Faktor 0 ist. Auf unseren Ausdruck übertragen bedeutet das, dass entweder x=0 ist oder das tanθ - g geteilt durch 2v0² cos²θ=0 ist. 
+
+Am Graph sieht man, dass diese Ausdrücke die Nullstellen sind. x=0 ist bereits unsere erste Nullstelle. Die zweite Nullstelle erhalten 
+wir durch auslösen nach x. Die Reichweite R ist die Strecke in x-Richtung, die das Objekt zurücklegt, bis es seine Aushanghöhe wieder 
+erreicht hat, also von der einen Nullstelle zur anderen.
+
+Um nach x umzustellen, bringen wir diesen Term auf die andere Seite. Dieser Teil ist mit x durch ein Mal verbunden. Durch Division 
+erhalten wir x. Der rechte Teil lässt sich noch vereinfachen. Durch einen Bruch teilt man, indem man mit dem Kehrwert multipliziert. 
+cos²θ im Zähler lässt sich neben den Bruch schreiben. cos²θ ist nur eine andere Schreibweise für cosθ². Der Tangens ist durch den Sinus 
+und Cosinus definiert. Hier wird diese Schreibweise hilfreich sein. Jetzt kann man diesen Ausdruck in den Zähler bringen. cosθ kommt im 
+Zähler und Nenner vor, also können wir kürzen. Übrig bleibt sinθ cosθ. Dieser Teil lässt sich weiter zusammenfassen. Die 
+Doppelwinkelidentität besagt, dass sin(2θ)=2sinθ cosθ ist. Auf den Beweis für diese Formel werde ich nicht eingehen. Teilen wir durch 2 
+und erhalten diesen Term. sinθ cosθ kommt nun in beiden Ausdrücken vor, so dass wir 0.5sin(2θ) in unseren Ausdruck einsetzen können. 
+0.5 mal 2 sind 1, wodurch die 0.5 und 2 wegfallen. Somit haben wir nach x aufgelöst und wir erhalten unsere Reichweite R=v0² geteilt 
+durch g mal sin(2θ).
+
+
+
+Aber:
+Aber...
+hätten wir ohne die Bahnkurve
+auf diese Formel stoßen können?
+Es ist oft eine gute Idee,
+Beobachtungen über das zu machen, was wir versuchen zu verstehen. Auf diese Weise findet man einen Ansatz, der einen ans Ziel führt. 
+Bereits durch die Formeln für die horizontale und vertikale Bewegung können wir uns die Reichweite herleiten.
+
+Für die Reichweite interessieren uns die Punkte, an denen das Objekt die Höhe 0 hat. Wenn wir die Formel für die vertikale Bewegung 
+nach t umstellen, wissen wir nach wie viel Zeit das Objekt den Boden berührt. Selbes Schema wie gerade: unser Ansatz ist y(t)=0 zu 
+setzen. Danach wenden wir den Satz vom Nullprodukt an und finden unsere Nullstelle.
+
+x(t) gibt an wie viel Weg in x-Richtung zurücklegt wird in der Zeit t. Durch einsetzen von t erhalten wir die zurückgelegte Distanz. 
+Zuletzt vereinfachen wir mithilfe der Doppelwinkelidentität. Somit kommen wir zum selben Ergebnis für die Reichweite.
+
+
+
+VisualEnding:
+Der Grund, warum ich euch eine alternative Herangehensweise an diese Aufgabe zeige, ist dass ich verdeutlichen möchte, dass es nicht 
+immer Die Eine Lösung gibt. Vielmehr kann man durch die richtigen Beobachtungen einen anderen, aber genauso richtigen Weg zum Ziel 
+finden. Dies ist besonders wichtig für Probleme, die auf den ersten Blick unlösbar erscheinen. Ein Perspektivenwechsel kann dazu führen, 
+dass man Den Ansatz entdeckt, mit dem man das Problem lösen kann. Vielleicht findet ihr sogar noch einen Ansatz, den ich noch nicht 
+gezeigt habe. Und damit wären wir am Ende angelangt.
+
+
+
+Ending:
+Das Programm mit dem ich arbeite ist Manim, eine Python-Bibliothek zum erstellen mathematischer Animationen.
+Die Musik, die ihr hört, ist von Vincent Rubinetti.
+Desmos ist ein Grafikrechner mit dem ich Ideen und Konzepte erstelle.
+Wie auch beim letzten Mal ist hier der Download zu allen Inhalten des Vortrags.
